@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tuto_Passport</string>
+
+    <!-- validation Errors -->
+    <string name="err_name">The name field is required.</string>
+    <string name="err_email">The email must be a valid email address.</string>
+    <string name="err_password">The password must be at least 6 characters.</string>
+</resources>
