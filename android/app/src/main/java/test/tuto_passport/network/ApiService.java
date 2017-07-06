@@ -18,6 +18,13 @@ public interface ApiService {
     @FormUrlEncoded
     Call<AccessToken> login(@Field("username") String username, @Field("password") String password);
 
+    @POST("social_auth")
+    @FormUrlEncoded
+    Call<AccessToken> socialAuth(@Field("name") String name,
+                                 @Field("email") String email,
+                                 @Field("provider") String provider,
+                                 @Field("provider_user_id") String providerUserId);
+
     @POST("refresh")
     @FormUrlEncoded
     Call<AccessToken> refresh(@Field("refresh_token") String refreshToken);

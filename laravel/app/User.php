@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Post;
+use App\SocialAccount;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
@@ -28,6 +29,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function socialAccounts(){
+        return $this->hasMany(SocialAccount::class);
+    }
 
     public function posts(){
         return $this->hasMany(Post::class);
