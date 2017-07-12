@@ -6,6 +6,6 @@
     <string name="err_email">The email must be a valid email address.</string>
     <string name="err_password">The password must be at least 6 characters.</string>
 
-    <string name="facebook_app_id">260945094312011</string>
-    <string name="fb_login_protocol_scheme">fb260945094312011</string>
+    <string name="facebook_app_id">YOUR_APP_ID</string>
+    <string name="fb_login_protocol_scheme">YOUR_THING</string>
 </resources>
