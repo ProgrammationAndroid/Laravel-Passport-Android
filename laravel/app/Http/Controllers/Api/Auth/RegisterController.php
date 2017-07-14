@@ -29,7 +29,7 @@ class RegisterController extends Controller
     	$user = User::create([
     		'name' => request('name'),
     		'email' => request('email'),
-    		'password' => bcrypt('password')
+    		'password' => bcrypt(request('password'))
     	]);
 
     	return $this->issueToken($request, 'password');
